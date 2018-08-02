@@ -3,7 +3,7 @@
     <h5>Create</h5>
     <div class="create__box">
       <div class="create__box__game">
-        <ImageSpeech :questions="questionCopy"/>
+        <SpeakWord :questions="questionCopy"/>
       </div>
       <div class="create__box__form">
         <div class="create__box__form__questions">
@@ -51,7 +51,7 @@
 
 <script>
 import _ from 'lodash'
-import ImageSpeech from '@/components/ImageSpeech'
+import SpeakWord from '@/components/SpeakWord'
 
 export default {
   name: 'Create',
@@ -77,7 +77,7 @@ export default {
     }
   },
   components: {
-    ImageSpeech
+    SpeakWord
   },
   methods: {
     addQuestion (question) {

@@ -35,7 +35,7 @@
 
 <script>
 export default {
-  name: 'ImageSpeech',
+  name: 'SpeakWord',
   data () {
     return {
       text: '',

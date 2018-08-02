@@ -5,7 +5,6 @@ Vue.use(Router)
 
 // COMPONENTS
 const  Create = () => import(/* webpackChunkName: "Create" */ '@/pages/Create')
-const Preview = () => import(/* webpackChunkName: "Create" */ '@/pages/Preview')
 
 export default new Router({
   routes: [
@@ -13,11 +12,6 @@ export default new Router({
       path: '/',
       name: 'Create',
       component: Create
-    },
-    {
-      path: '/preview',
-      name: 'Preview',
-      component: Preview
     }
   ]
 })
